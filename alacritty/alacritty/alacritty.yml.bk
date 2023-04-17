@@ -1,0 +1,8 @@
+#tab
+tabspaces: 4
+
+#字体
+family: Source Han Sans CN
+
+#不透明度
+background_opcity: 0.9
