@@ -4,6 +4,11 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+#mine log
+# 启用/禁用日志记录
+bindsym $mod+x shmlog toggle
+
+
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
@@ -139,6 +144,10 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
+#miger mine
+bindsym $mod+g exec google-chrome-stable
+
+
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
@@ -187,8 +196,9 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
-assign [class="alacritty"] $ws1
-assign [class="google-chrome-stable"] $ws2
+assign [class="Alacritty"] $ws1
+#assign [class="google-chrome-stable"] $ws2
+assign [class="Google-chrome"] $ws2
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -331,6 +341,11 @@ bar {
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
+
+  #miger mine
+	#tray_output primary
+	#tray_output eDP1
+
 
 	bindsym button4 nop
 	bindsym button5 nop
